@@ -1,0 +1,586 @@
+/*
+Items Name : Bordev
+Author : Ngetemplates
+-------------------------------- */
+
+
+/*font*/
+
+ @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
+
+/*general*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #777;
+    font-size: 14px;
+    background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 110%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+a {
+    color: #111;
+}
+
+a:hover {
+    color: #111;
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+}
+
+.segments {
+    padding: 100px 0 100px;
+}
+
+.segments-page {
+    background: linear-gradient( rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url('../images/intro.jpg');
+    height: 320px;
+    position: relative;
+    background-position: 100% 80%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.segments-page .page-caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.segments-page .page-caption h2 {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-title h3 {
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.section-title .line {
+    width: 50px;
+    height: 2px;
+    margin: 0 auto;
+    border: 1px dashed #1e90ff;
+}
+
+.bg-second {
+    background-color: #f9f9f9;
+}
+
+
+/*button default*/
+
+.button {
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    padding: 10px 22px;
+    border: 2px solid #fff;
+    margin: 50px 0 0;
+    font-size: 13px;
+    z-index: 0;
+    border-radius: 32px;
+    transition: all .4s ease;
+}
+
+.button:hover {
+    background-color: #1e90ff;
+    color: #fff;
+    border-color: #1e90ff;
+}
+
+.button:focus {
+    outline: 0 !important;
+}
+
+
+/*navbar*/
+
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar.fixed-top {
+    background: transparent;
+    border-color: transparent;
+}
+
+.navbar .navbar-brand {
+    letter-spacing: 1px;
+    transition: all .5s ease;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.navbar .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar .navbar-brand span {
+    color: #1e90ff;
+}
+
+.navbar .navbar-nav li {
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav li:last-child {
+    margin-right: 0;
+}
+
+.navbar .navbar-nav li .nav-link {
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.navbar .navbar-nav li .nav-link.no-pdr {
+    padding-right: 0;
+}
+
+.navbar .navbar-nav li:hover .nav-link {
+    color: #fff;
+}
+
+/*home intro*/
+
+.home-intro {
+    background: linear-gradient(
+        rgba(0, 0, 0, .70),
+        rgba(0, 0, 0, .70)
+        ),
+     url('../images/intro.jpg');
+    background-size: cover;
+    background-position: 100% 80%;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+}
+
+.home-intro .intro-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    padding-top: 17%;
+}
+
+.home-intro .intro-caption .welcome-title span {
+    font-size: 22px;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.home-intro .intro-caption h2 {
+    color: #1e90ff;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.home-intro .intro-caption h2 span {
+    font-weight: 400;
+    color: #fff;
+}
+
+.home-intro .intro-caption p {
+    margin: 0 25%;
+}
+
+.home-intro .content .button {
+    margin-top: 25px;
+}
+
+.home-intro .content .button:first-child {
+    margin-right: 10px;
+}
+
+.home-intro .content .button:last-child {
+    background-color: #1e90ff;
+    border-color: #1e90ff;
+    margin-left: 10px;
+}
+
+.home-intro .content .button:last-child:hover {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+
+/* services */
+.services .second-row {
+    margin-top: 30px;
+}
+
+.services .content {
+    text-align: center;
+    padding: 30px;
+    transition: all .4s ease;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.services .content:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    background-color: #fff;
+}
+
+.services .content i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 40px;
+    margin-bottom: 20px;
+    transition: all .4s ease;
+}
+
+.services .content:hover i {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+.services .content h4 {
+    margin-bottom: 20px;
+}
+
+/*portfolio*/
+
+.portfolio .row .col-md-4 {
+    padding: 15px;
+}
+
+.portfolio .portfolio-menu {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio .portfolio-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio .portfolio-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #666;
+    border: 2px solid #1e90ff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    transition: all .4s ease;
+}
+
+.portfolio .portfolio-menu ul .active {
+    background-color: #1e90ff;
+    border-color: #1e90ff;
+    color: #fff;
+}
+
+.portfolio .content {
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0) 0px 3px 1px -2px;
+}
+
+.portfolio .content img {
+    width: 100%;
+}
+
+.portfolio .content .p-caption {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    padding-top: 25%;
+    background-color: rgba(255, 255, 255, 0.88);
+    text-align: center;
+    transition: all .4s ease;
+    transform: scale(1.1, 1.1);
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.portfolio .content:hover .p-caption {
+    opacity: 1;
+    transform: scale(1, 1);
+    border-radius: 0;
+}
+
+.portfolio .content .p-caption span {
+    color: #444;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    transform: translateY(10px);
+    transition-duration: .2s;
+    transition-delay: .4s;
+    opacity: 0;
+}
+
+.portfolio .content:hover .p-caption span {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio .content .p-caption a i {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 24px;
+    color: #939393;
+    border-radius: 50%;
+    transition-duration: .3s;
+    transition-delay: .3s;
+    opacity: 0;
+}
+
+.portfolio .content:hover .p-caption a i:hover {
+    color: #1e90ff;
+    transition: all .4s ease;
+}
+
+
+.portfolio .content:hover .p-caption a i {
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+
+/* team */
+
+.team .content .image img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #f5f5f5;
+    transition: border-width .3s linear;;
+}
+
+.team .content .image img:hover {
+    transform: scale(1.1, 1.1);
+    border-width: 0;
+}
+
+.team .content {
+    text-align: center;
+    border: 1px dashed #ddd;
+    padding: 30px;
+}
+
+.team .content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.team .content ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 4px;
+    font-size: 20px;
+}
+
+.team .content ul li a i {
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    color: #666;
+    transition: all .3s ease;
+}
+
+.team .content ul li:hover .fa-facebook {
+    background-color: #3b5999;
+    color: #fff;
+}
+
+.team .content ul li:hover .fa-pinterest {
+    background-color: #bd081c;
+    color: #fff;
+}
+
+.team .content ul li:hover .fa-twitter {
+    background-color: #55acee;
+    color: #fff;
+}
+
+.team .content ul li:hover .fa-google {
+    background-color: #dd4b39;
+    color: #fff;
+}
+
+.team .content .text h4 {
+    margin-bottom: 15px;
+    font-size: 18px
+}
+
+.team .content .text p {
+    margin-top: 15px;
+}
+
+
+/*contact*/
+.contact {
+  padding-top: 60px;
+  padding-bottom: 95px;
+}
+
+.contact .section-title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.contact .section-title .line {
+    margin: 0;
+}
+
+.contact i {
+  height: 60px;
+  width: 60px;
+  background: #0fa797;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.contact .content-map iframe {
+  width: 100%;
+  height: 448px;
+}
+
+/* placeholder */
+
+:-webkit-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #555;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #555;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #555;
+}
+
+::-moz-placeholder {
+    /* Firefox 18- */
+    color: #555;
+}
+
+/*footer*/
+
+footer {
+    padding: 50px 0;
+    background-color: #262626;
+    text-align: center;
+}
+
+footer .footer-brand {
+    margin-bottom: 30px;
+}
+
+footer .footer-brand h2 {
+    color: #fff;
+}
+
+footer .footer-brand h2 span {
+    color: #1e90ff;
+}
+
+footer .wrap-social {
+    margin-bottom: 30px;
+}
+
+footer .wrap-social ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer .wrap-social ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+}
+
+footer .wrap-social ul li:last-child {
+    margin-right: 0;
+}
+
+footer .wrap-social ul li a i {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    border: 2px solid #ddd;
+    color: #fff;
+    border-radius: 50%;    
+    transition: all .4s ease;
+}
+
+footer .wrap-social ul li:hover a i {
+    border-color: #c3c3c3;
+    color: #c3c3c3;
+}
+
+footer .wrap-copyright {
+    text-align: center;
+    color: #888;
+    letter-spacing: 1px;
+}
